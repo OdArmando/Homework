@@ -15,12 +15,12 @@ class Person:
         print(f"My name is {self.name} and i am {self.age} years old")
         print(f"Gender: {self.gender}")
 
-class Employee:
+class Employee(Person):
     def __init__(self,name, age, gender):
         super().__init__(name, age, gender)
 
 
-class Manager:
+class Manager(Person):
     def __init__(self, name, age, gender, position):
         super().__init__(name, age, gender)
         self.position = position
