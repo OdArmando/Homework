@@ -34,15 +34,60 @@ class Student:
         return self.prenume
 
 
-c=Curs("Matematica")
-g=Grupe("A")
-s=Student("Georgescu","Mihai")
+c = Curs("Matematica")
+g = Grupe("A")
+s = Student("Georgescu", "Mihai")
 c2 = Curs("Fizica")
 g2 = Grupe("B")
 s2 = Student("Odagiu", "Armando")
 c.addGrupa(g.nume_grupa)
-c.addStudent(s.nume,s.prenume)
+c.addStudent(s.nume, s.prenume)
 c2.addGrupa(g2.nume_grupa)
-c2.addStudent(s2.nume,s2.prenume)
+c2.addStudent(s2.nume, s2.prenume)
 print(c)
 print(c2)
+
+# class Student:
+#     def __init__(self, name, age, grade):
+#         self.name = name
+#         self.age = age
+#         self.grade = grade
+#
+#     def get_grade(self):
+#         return self.grade
+#
+#
+# class Group:
+#     def __init__(self, name, max_number_of_students):
+#         self.name = name
+#         self.maxStudents = max_number_of_students
+#         self.students = []
+#
+#     def add_student(self, student):
+#         if len(self.students) < self.maxStudents:
+#             self.students.append(student)
+#             return True
+#         else:
+#             return False
+#
+#     def printStudents(self):
+#         for student in self.students:
+#             print(f"Student name:{student.name}")
+#
+#
+# class Course:
+#     def __init__(self, name, max_number_of_groups):
+#         self.name = name
+#         self.maxGroups = max_number_of_groups
+#         self.groups = []
+#
+#     def add_group(self, group):
+#         if len(self.groups) < self.maxGroups:
+#             self.groups.append(group)
+#             return True
+#         else:
+#             return False
+#
+#     def printGroups(self):
+#         for group in self.groups:
+#             print(f"Group name:{group.name}")
