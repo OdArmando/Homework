@@ -19,24 +19,25 @@ class Employee(Person):
     def __init__(self,name, age, gender):
         super().__init__(name, age, gender)
 
+class Worker(Employee):
+    def __init__(self, name, age, gender):
+        super(). __init__(name, age, gender)
+        self.rights = 1
 
-class Manager(Person):
-    def __init__(self, name, age, gender, position):
+
+class Manager(Employee):
+    def __init__(self, name, age, gender):
         super().__init__(name, age, gender)
-        self.position = position
+        self.rights = 10
 
+class Company:
+    def __init__(self,coName):
+        self.coName = coName
+        self.employee = []
 
-
-
-
-
-
-
-
-
-
-
-
+    def add_emplotyee(self,employee):
+        self.employees.append(employee)
+        return self.employees
 
 
 
